@@ -31,8 +31,7 @@ void loop()
       // It makes for a nicer effect
       analogWrite(pins[light], inten>>4);
     } else {
-      // Digital I/O pins 5 & 6 don't seem to go dark if I do analogWrite(pins[light], 0)
-      // By doing digitalWrite it all looks correct
+      
       digitalWrite(pins[light], 0);
     }    
   }
